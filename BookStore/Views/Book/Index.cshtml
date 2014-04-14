@@ -1,0 +1,154 @@
+﻿@model BookStore.ViewModel.BookModel.ViewBooksViewModel
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Books</h2>
+
+@if (Model.CreateViewBookViewModels.Count > 0)
+{
+    
+    foreach (var book in Model.CreateViewBookViewModels)
+    {
+        var bookId = book.Id;
+    @Html.Hidden("bookId", bookId)
+    <div class="book-table">
+    <table>
+        <tr>
+            <td><img src="data:image/jpg;base64,@(Convert.ToBase64String(book.CoverImage))" width="150" height="200" /></td>
+        </tr>
+        <tr>
+            <td>@book.Title</td>
+        </tr>
+        <tr>
+            <td>Author: @book.Name</td>
+        </tr>
+        <tr>
+            <td>Genre: @book.Category</td>
+        </tr>
+        <tr>
+            <td>ISBN: @book.ISBN</td>
+        </tr>
+        <tr>
+            <td>€@book.Price</td>
+        </tr>
+        <tr>
+            <td id="book-stock-@book.Id" >@book.AmountInStock left in stock</td>
+        </tr>
+        <tr>
+            <td>
+                @using (Ajax.BeginForm("AddBookToShoppingCart", "Order", new AjaxOptions
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "addToShoppingCart"
+                }))
+                {
+                    <input id="id" name="id" type="hidden" value="@book.Id"/>
+                    <input type="submit" value="Add To Cart" />
+                }
+            </td>
+        </tr>
+        @if (BookStore.Infrastructure.UserProfile.IsUserAdmin)
+        {
+            <tr>
+                <td>
+                    @using (Html.BeginForm("UpdateBook", "Book", FormMethod.Get))
+                    {
+                        <input id="id" name="id" type="hidden" value="@book.Id"/>
+                        <input type="submit" value="Update Book" />
+                    }
+                </td>
+            </tr>   
+        }
+    </table>
+        </div>
+    }
+        
+}
+else
+{
+    @:No Books in book store
+}
+
+<div class="clear"></div>
+
+<div id="shopping-cart">
+    @Html.Partial("_ShoppingCartPartial", new BookStore.ViewModel.OrderModel.ShoppingCartViewModel
+{
+    Books = Model.ShoppingCartViewModel.Books    
+})
+</div>
+@if (BookStore.Infrastructure.UserProfile.IsUserAdmin)
+{
+    <h2>Add Book</h2>
+    using (Html.BeginForm("CreateBook", "Book", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+    <table class="book-table">
+        <tr>
+            <td>Cover Image</td>
+            <td>
+                <input type="file" name="file" /></td>
+        </tr>
+        <tr>
+            <td>Title:</td>
+            <td>@Html.TextBoxFor(m => m.Title)</td>
+        </tr>
+        <tr>
+            <td>Author First Name:</td>
+            <td>@Html.TextBoxFor(m => m.AuthorFirstName)</td>
+        </tr>
+        <tr>
+            <td>Author Last Name:</td>
+            <td>@Html.TextBoxFor(m => m.AuthorLastName)</td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td>@Html.TextBoxFor(m => m.Category)</td>
+        </tr>
+        <tr>
+            <td>ISBN</td>
+            <td>@Html.TextBoxFor(m => m.ISBN)</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>@Html.TextBoxFor(m => m.Price)</td>
+        </tr>
+        <tr>
+            <td>Amount In Stock:</td>
+            <td>@Html.TextBoxFor(m => m.AmountInStock)</td>
+        </tr>
+    </table>
+    <div class="clear"></div>
+    <input type="submit" value="Add Book" />
+    }
+}
+
+<script type="text/javascript">
+    function createBook(response) {
+        alert("Book Added");
+    }
+
+    function addToShoppingCart(response) {
+        if (response.Success) {
+            //var stock = document.getElementById("#book-stock-" + response.CreateViewBookViewModel.Id).innerHTML();
+            //stock -= 1;
+            $("#book-stock-" + response.CreateViewBookViewModel.Id).html(response.CreateViewBookViewModel.AmountInStock + " left in stock");
+            $("#shopping-cart-table").prepend($("<tr id=cart-" + response.CreateViewBookViewModel.Id + "></tr>"));
+            var cartRow = "#" + $("#cart-" + response.CreateViewBookViewModel.Id).attr("id");
+            $(cartRow).append($("<td></td>").html(response.CreateViewBookViewModel.Title));
+            $(cartRow).append($("<td></td>").html("€" + response.CreateViewBookViewModel.Price));
+            $(cartRow).append($("<td></td>").html('<input type="submit" value="Remove" />'));
+            $("#total-price").html("€" + response.TotalPrice);
+            //$("#book-stock-" + response.CreateViewBookViewModel.Id).html(response.CreateViewBookViewModel.AmountInStock + " left in stock");
+        }
+    }
+
+    function removeFromShoppingCart(response) {
+        if (response.Success) {
+            $("#book-stock-" + response.CreateViewBookViewModel.Id).html(response.CreateViewBookViewModel.AmountInStock + " left in stock");
+            $("#cart-" + response.CreateViewBookViewModel.Id).remove();
+            $("#total-price").html("€" + response.TotalPrice);
+        }
+    }
+</script>

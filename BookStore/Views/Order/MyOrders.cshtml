@@ -1,0 +1,34 @@
+﻿@model BookStore.ViewModel.OrderModel.MyOrdersViewModel
+
+@{
+    ViewBag.Title = "MyOrders";
+}
+
+<h2>My Orders</h2>
+
+@using (Html.BeginForm("CancelOrder", "Order", FormMethod.Post))
+{
+    foreach (var order in Model.PurchaseOrderViewModel.OrderBy(p => p.DateAdded))
+    {
+    <h3>@order.DateAdded</h3>
+        if (!order.IsBought)
+        {
+            <h3>Current Order</h3> 
+        }
+        foreach (var book in Model.PurchaseOrderViewModel.SingleOrDefault(o => o.OrderId == order.OrderId).ShoppingCartViewModel.Books)
+        {
+            <table>
+                <tr>
+                    <td>@book.Title</td>
+                </tr>
+            </table>
+        }
+        <div class="clear"></div>
+        if (order.CanCancel)
+        {
+            @Html.HiddenFor(m => m.PurchaseOrderViewModel.SingleOrDefault(o => o.OrderId == order.OrderId).OrderId, new { Value = order.OrderId })
+            <input type="submit" value="Cancel" />
+        }
+    }
+    
+}

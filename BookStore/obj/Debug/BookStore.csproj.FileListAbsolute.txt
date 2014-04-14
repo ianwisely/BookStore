@@ -1,0 +1,119 @@
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\BookStore.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\BookStore.pdb
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Antlr3.Runtime.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\EntityFramework.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Newtonsoft.Json.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Net.Http.Formatting.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.WebHost.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Mvc.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Optimization.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Providers.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Razor.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\WebGrease.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\EntityFramework.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Newtonsoft.Json.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Net.Http.Formatting.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.WebHost.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Mvc.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Razor.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\obj\Debug\BookStore.csprojResolveAssemblyReference.cache
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\obj\Debug\BookStore.dll
+C:\Users\C10353123\Documents\Visual Studio 2012\Projects\BookStore\BookStore\obj\Debug\BookStore.pdb
+H:\Design Patterns\BookStore\BookStore\obj\Debug\BookStore.dll
+H:\Design Patterns\BookStore\BookStore\obj\Debug\BookStore.pdb
+H:\Design Patterns\BookStore\BookStore\bin\BookStore.dll
+H:\Design Patterns\BookStore\BookStore\bin\BookStore.pdb
+H:\Design Patterns\BookStore\BookStore\bin\Antlr3.Runtime.dll
+H:\Design Patterns\BookStore\BookStore\bin\EntityFramework.dll
+H:\Design Patterns\BookStore\BookStore\bin\Microsoft.Web.Infrastructure.dll
+H:\Design Patterns\BookStore\BookStore\bin\Newtonsoft.Json.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Net.Http.Formatting.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Http.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Http.WebHost.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Mvc.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Optimization.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Providers.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Razor.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.WebPages.Deployment.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.WebPages.dll
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.WebPages.Razor.dll
+H:\Design Patterns\BookStore\BookStore\bin\WebGrease.dll
+H:\Design Patterns\BookStore\BookStore\bin\EntityFramework.xml
+H:\Design Patterns\BookStore\BookStore\bin\Newtonsoft.Json.xml
+H:\Design Patterns\BookStore\BookStore\bin\System.Net.Http.Formatting.xml
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Http.xml
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Http.WebHost.xml
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Mvc.xml
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.Razor.xml
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.WebPages.xml
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.WebPages.Deployment.xml
+H:\Design Patterns\BookStore\BookStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\BookStore.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\BookStore.pdb
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Antlr3.Runtime.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\EntityFramework.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Newtonsoft.Json.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Net.Http.Formatting.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.WebHost.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Mvc.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Optimization.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Providers.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Razor.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\WebGrease.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\EntityFramework.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Newtonsoft.Json.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Net.Http.Formatting.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.WebHost.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Mvc.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Razor.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\obj\Debug\BookStore.dll
+C:\Users\ian.wisely\Documents\Visual Studio 2012\Projects\BookStore\BookStore\obj\Debug\BookStore.pdb
+H:\Design Patterns\BookStore\BookStore\obj\Debug\BookStore.csprojResolveAssemblyReference.cache
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\obj\Debug\BookStore.csprojResolveAssemblyReference.cache
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\obj\Debug\BookStore.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\BookStore.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\BookStore.pdb
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Antlr3.Runtime.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\EntityFramework.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Newtonsoft.Json.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Net.Http.Formatting.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.WebHost.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Mvc.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Optimization.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Providers.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Razor.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\WebGrease.dll
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\EntityFramework.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\Newtonsoft.Json.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Net.Http.Formatting.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Http.WebHost.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Mvc.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.Razor.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ian\Documents\Visual Studio 2012\Projects\BookStore\BookStore\obj\Debug\BookStore.pdb

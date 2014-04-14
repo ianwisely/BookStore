@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+	<script src="~/Scripts/jquery-1.7.1.js"></script>
+	<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+<body>
+	<div class="toolbar">
+		<div class="banner">
+            <a amountinstock="0" authorfirstname="" authorlastname="" category="" coverimage="" createviewbookviewmodel="BookStore.ViewModel.BookModel.CreateViewBookViewModel" createviewbookviewmodels="System.Collections.Generic.List`1[BookStore.ViewModel.BookModel.CreateViewBookViewModel]" isbn="" id="0" name="" price="0" shoppingcartviewmodel="BookStore.ViewModel.OrderModel.ShoppingCartViewModel" title="" userid="0" href="/Book/Index/0?Length=4">Book Store</a>
+		</div>
+		<div class="right-div">
+            @Html.ActionLink("Logout", "Logout", "User")
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a amountinstock="0" authorfirstname="" authorlastname="" category="" coverimage="" createviewbookviewmodel="BookStore.ViewModel.BookModel.CreateViewBookViewModel" createviewbookviewmodels="System.Collections.Generic.List`1[BookStore.ViewModel.BookModel.CreateViewBookViewModel]" isbn="" id="0" name="" price="0" shoppingcartviewmodel="BookStore.ViewModel.OrderModel.ShoppingCartViewModel" title="" userid="0" href="/Book/Index/0?Length=4">Home</a></li>
+				<li>@Html.ActionLink("My Orders", "GetMyOrders", "Order")</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	@RenderBody()
+
+	@Scripts.Render("~/bundles/jquery")
+	@RenderSection("scripts", required: false)
+</body>
+</html>

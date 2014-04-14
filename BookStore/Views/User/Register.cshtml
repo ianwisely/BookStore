@@ -1,0 +1,48 @@
+﻿@model BookStore.ViewModel.UserModel.RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+    Layout = null;
+}
+
+<h2>Register</h2>
+
+    @using (Html.BeginForm("Register", "User", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>@Html.TextBoxFor(m => m.FirstName)</td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>@Html.TextBoxFor(m => m.LastName)</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>@Html.TextBoxFor(m => m.Email)</td>
+            </tr>
+            <tr>
+                <td>Confirm Email</td>
+                <td>@Html.TextBoxFor(m => m.ConfirmEmail)</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>@Html.PasswordFor(m => m.Password)</td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>@Html.PasswordFor(m => m.ConfirmPassword)</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>@Html.TextBoxFor(m => m.Address)</td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>@Html.TextBoxFor(m => m.PhoneNumber)</td>
+            </tr>
+        </table>
+            
+        <input type="submit" value="Register" />
+    }

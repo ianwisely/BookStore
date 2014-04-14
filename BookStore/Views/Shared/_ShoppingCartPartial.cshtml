@@ -1,0 +1,32 @@
+﻿@model BookStore.ViewModel.OrderModel.ShoppingCartViewModel
+
+
+<h2>Shopping Cart</h2>
+<table id="shopping-cart-table">
+    @{decimal totalPrice = 0;}
+    @foreach (var book in Model.Books)
+    {
+        totalPrice += book.Price;
+        <tr id="cart-@book.Id">
+            <td>@book.Title</td>
+            <td>€@book.Price</td>
+              @*  @using (Ajax.BeginForm("RemoveFromShoppingCart", "Order", new AjaxOptions
+            {
+                HttpMethod = "PUT",
+                OnSuccess = "removeFromShoppingCart"
+            }))
+            {
+            }*@
+
+        </tr>
+    }
+    <tr>
+        <td>Total:</td>
+        <td id="total-price">€@totalPrice</td>
+    </tr>
+</table>
+<div class="clear"></div>
+@using (Html.BeginForm("BuyBooks", "Order", FormMethod.Get))
+{
+    <input type="submit" value="Procede To Checkout" />
+}

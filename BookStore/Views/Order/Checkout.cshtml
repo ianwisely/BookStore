@@ -1,0 +1,91 @@
+﻿@model BookStore.ViewModel.OrderModel.PurchaseOrderViewModel
+
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout</h2>
+
+<table>
+    @{decimal totalPrice = 0;}
+    @foreach (var book in Model.ShoppingCartViewModel.Books)
+    {
+        totalPrice += book.Price;
+        <tr>
+            <td><img src="data:image/jpg;base64,@(Convert.ToBase64String(book.CoverImage))" width="150" height="200" /></td>
+        </tr>
+        <tr>
+            <td>@book.Title</td>
+            <td>€@book.Price</td>
+        </tr>
+    }
+    <tr>
+        <td>Total:</td>
+        <td id="total-price">€@totalPrice</td>
+    </tr>
+    <tr>
+        <td>User Points:</td>
+        <td>@Model.UserPoints</td>
+    </tr>
+</table>
+
+<h2>Purchase</h2>
+@using (Html.BeginForm("BuyBooks", "Order", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>Total:</td>
+            <td>€@Model.TotalPrice</td>
+        </tr>
+        <tr>
+            <td>Points After Purchase:</td>
+            <td>@Model.AfterPointsNoDiscount</td>
+        </tr>
+    </table>
+    @Html.HiddenFor(m => m.PaymentType, new { Value = 1 })
+    @Html.HiddenFor(m => m.UserPoints, new { Value = Model.AfterPointsNoDiscount })
+    <input type="submit" value="Buy" />
+}
+
+@if (Model.UserPoints >= 100)
+{
+    <h2>Free Book Discount - Use 100 points to get the cheapest book free</h2>
+    using (Html.BeginForm("BuyBooks", "Order", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>Total:</td>
+                <td>€@Model.FreeBookPrice</td>
+            </tr>
+            <tr>
+                <td>Points After Purchase:</td>
+                <td>@Model.AfterPointsFreeBook</td>
+            </tr>
+        </table>
+        @Html.HiddenFor(m => m.PaymentType, new { Value = 2 })
+        @Html.HiddenFor(m => m.UserPoints, new { Value = Model.AfterPointsFreeBook })
+        <input type="submit" value="Buy" />
+    }
+}
+
+@if (Model.UserPoints > 0)
+{
+    <h2>Points Discount - Use all your points for a discount off your order</h2>
+    using (Html.BeginForm("BuyBooks", "Order", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>Total:</td>
+                <td>€@Model.DiscountPrice</td>
+            </tr>
+            <tr>
+                <td>Points After Purchase:</td>
+                <td>@Model.AfterPointsDiscount</td>
+            </tr>
+        </table>
+        @Html.HiddenFor(m => m.PaymentType, new { Value = 3 })
+        @Html.HiddenFor(m => m.UserPoints, new { Value = Model.AfterPointsDiscount })
+        <input name="discountId" type="hidden" value="3"/>
+        <input type="submit" value="Buy" />
+    }
+}

@@ -1,0 +1,27 @@
+﻿@model BookStore.ViewModel.UserModel.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<h2>Login</h2>
+
+    @ViewBag.Error
+
+    @using (Html.BeginForm("Login", "User", FormMethod.Get))
+    {
+        <table>
+            <tr>
+                <td>@Html.LabelFor(m => m.Email) </td>
+                <td>@Html.TextBoxFor(m => m.Email) @Html.ValidationMessageFor(m => m.Email)</td>
+            </tr>
+            <tr>
+               <td>@Html.LabelFor(m => m.Password) </td>
+               <td>@Html.PasswordFor(m => m.Password) @Html.ValidationMessageFor(m => m.Password)</td> 
+            </tr>
+        </table>
+        <input type="submit" value="Login" />
+    }
+
+Not Registered? Click @Html.ActionLink("here", "Register", "User")

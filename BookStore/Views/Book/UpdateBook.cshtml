@@ -1,0 +1,45 @@
+﻿@model BookStore.ViewModel.BookModel.CreateViewBookViewModel
+
+@{
+    ViewBag.Title = "Update Book";
+}
+
+@if (BookStore.Infrastructure.UserProfile.IsUserAdmin)
+{
+    <h2>Add Book</h2>
+    using (Html.BeginForm("UpdateBook", "Book", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+    <table>
+        @Html.HiddenFor(m => m.Id)
+        <tr>
+            <td>Title:</td>
+            <td>@Html.TextBoxFor(m => m.Title)</td>
+        </tr>
+        <tr>
+            <td>Author First Name:</td>
+            <td>@Html.TextBoxFor(m => m.AuthorFirstName, new { @Value = Model.Name.Split(' ')[0] })</td>
+        </tr>
+        <tr>
+            <td>Author Last Name:</td>
+            <td>@Html.TextBoxFor(m => m.AuthorLastName, new { @Value = Model.Name.Split(' ')[1] })</td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td>@Html.TextBoxFor(m => m.Category)</td>
+        </tr>
+        <tr>
+            <td>ISBN</td>
+            <td>@Html.TextBoxFor(m => m.ISBN)</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>@Html.TextBoxFor(m => m.Price)</td>
+        </tr>
+        <tr>
+            <td>Amount In Stock:</td>
+            <td>@Html.TextBoxFor(m => m.AmountInStock)</td>
+        </tr>
+    </table>
+    <input type="submit" value="Update Book" />
+    }
+}
